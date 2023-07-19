@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <style>
+    /* CSS Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-form {
+      width: 300px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+    }
+    .signup-form input[type="text"],
+    .signup-form input[type="password"],
+    .signup-form input[type="email"],
+    .signup-form input[type="number"],
+    .signup-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc; /* Added border for all input fields */
+      border-radius: 5px;
+    }
+    .signup-form input[type="email"] {
+      /* Custom style for the email input */
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .signup-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .signup-form select {
+      /* Custom style for the select dropdown */
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    .login-link {
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-form">
+    <h2>Sign Up</h2>
+    <form method="post" action="datacon.php">
+      <input type="email" name="email" placeholder="Email-ID" required>
+      <input type="text" name="name" placeholder="Username" required>
+      <input type="password" name="pwd" placeholder="Password" required>
+      <input type="number" name="contact" placeholder="Contact" required>
+      <select name="role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="trainee">Trainee</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      <p>Already have an account? <a href="./homepage.html">Login</a></p>
+    </div>
+  </div>
+</body>
+</html>
